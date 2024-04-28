@@ -1,7 +1,7 @@
 // Complete the Index page component here
 // Use chakra-ui
 import { Box, VStack, Input, Button, Text, useToast } from '@chakra-ui/react';
-import { getClient } from '../../lib/crud';
+import { getClient } from '../../lib/crud.js';
 import { useState, useEffect } from 'react';
 
 
@@ -24,6 +24,7 @@ const Index = () => {
 
   const postTweet = async () => {
     if (!username || !content) {
+      // Toast for displaying errors when username or content is missing
       toast({
         title: 'Error',
         description: 'Username and tweet content are required',
