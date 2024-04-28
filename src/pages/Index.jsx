@@ -1,6 +1,7 @@
 // Complete the Index page component here
 // Use chakra-ui
 import { Box, VStack, Input, Button, Text, useToast } from '@chakra-ui/react';
+import { getClient } from '../../lib/crud';
 import { useState, useEffect } from 'react';
 
 
